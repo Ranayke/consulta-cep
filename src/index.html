@@ -7,45 +7,61 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="app">
-      <form>
-        <input type="text" placeholder="Digite o CEP" />
-        <button>Consultar CEP</button>
-      </form>
-      <main></main>
-    </div>
+    <div></div>
 
-    <div class="mapouter">
-      <div class="gmap_canvas">
-        <iframe
-          width="600"
-          height="500"
-          id="gmap_canvas"
-          src="https://maps.google.com/maps?q=&t=&z=15&ie=UTF8&iwloc=&output=embed"
-          frameborder="0"
-          scrolling="no"
-          marginheight="0"
-          marginwidth="0"
-        ></iframe>
-        <style>
-          .mapouter {
-            position: relative;
-            text-align: right;
-            height: 500px;
-            width: 600px;
-          }
-        </style>
-        <style>
-          .gmap_canvas {
-            overflow: hidden;
-            background: none !important;
-            height: 500px;
-            width: 600px;
-            border-radius: 0.4rem;
-          }
-        </style>
+    <section id="centerPage">
+      <div class="cepForms">
+        <div class="cepDiscover">
+          <form>
+            <input type="text" placeholder="UF" />
+            <input type="text" placeholder="Cidade" />
+            <input type="text" placeholder="Rua" />
+            <button class="submitCepDiscoverButton" >Descobrir CEP</button>
+          </form>
+          <main></main>
+        </div>
+
+        <div id="app">
+          <form>
+            <input type="text" placeholder="Digite o CEP" />
+            <button class="submitStreetSearchButton">Consultar CEP</button>
+          </form>
+          <main></main>
+        </div>
       </div>
-    </div>
+
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe
+            width="600"
+            height="500"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?q=&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe>
+          <style>
+            .mapouter {
+              position: relative;
+              text-align: right;
+              height: 500px;
+              width: 600px;
+            }
+          </style>
+          <style>
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              height: 500px;
+              width: 600px;
+              border-radius: 0.4rem;
+            }
+          </style>
+        </div>
+      </div>
+    </section>
 
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <script src="./app.js"></script>
