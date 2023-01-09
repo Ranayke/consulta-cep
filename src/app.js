@@ -14,6 +14,7 @@ function run(event) {
   zipCode = zipCode.replace("-", "");
   zipCode = zipCode.trim();
 
+  // Getting API informations about street search
   axios
     .get("https://viacep.com.br/ws/" + zipCode + "/json/")
     .then(function (response) {
@@ -32,6 +33,7 @@ function run(event) {
     });
 }
 
+// Creating lines to print informations about the API response to user
 function createLine(text) {
   var line = document.createElement("p");
   var text = document.createTextNode(text);
@@ -39,6 +41,7 @@ function createLine(text) {
   content.appendChild(line);
 }
 
+// Update embed map to certain street location
 submitButton.addEventListener("click", function () {
   searchMap =
     "https://maps.google.com/maps?q=" +
@@ -47,3 +50,14 @@ submitButton.addEventListener("click", function () {
     var mapURL = document.querySelector("#gmap_canvas")
     mapURL.setAttribute('src', searchMap)
 });
+
+/* // Getting API informations about CEP search
+axios
+.get("viacep.com.br/ws/" + ufCode + "/" + localidadeCode + "/" + logradouroCode + "/")
+.then(function(response) {
+  if (response.data.erro) {
+    throw new error("Informações inválidas");
+  }
+  //content.innerHTML = "";
+  createLine(response.data.cep);
+}) */
