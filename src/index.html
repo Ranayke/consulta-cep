@@ -13,20 +13,22 @@
       <div class="cepForms">
         <div class="cepDiscover">
           <form>
-            <input type="text" placeholder="UF" />
-            <input type="text" placeholder="Cidade" />
-            <input type="text" placeholder="Rua" />
-            <button class="submitCepDiscoverButton" >Descobrir CEP</button>
+            <input id="ufCode" type="text" placeholder="UF" />
+            <input id="localidadeCode" type="text" placeholder="Cidade" />
+            <input id="logradouroCode" type="text" placeholder="Rua" />
+            <button id="submitCepDiscoverButton" >Descobrir CEP</button>
           </form>
-          <main></main>
+          <main><p></p></main>
         </div>
 
         <div id="app">
           <form>
-            <input type="text" placeholder="Digite o CEP" />
-            <button class="submitStreetSearchButton">Consultar CEP</button>
+            <input id="inputBlur" type="text" placeholder="Digite o CEP" required/>
+            <input id="rua" type="text" placeholder="Rua" />
+            <input id="bairro" type="text" placeholder="Bairro" />
+            <input id="cidade" type="text" placeholder="Cidade" />
+            <input id="estado" type="text" placeholder="Estado" />
           </form>
-          <main></main>
         </div>
       </div>
 

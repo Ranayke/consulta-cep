@@ -40,10 +40,10 @@
 
   form input {
     border: none;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 100;
     color: #000;
-    width: 150px;
+    width: 15rem;
     outline: none;
     text-align: center;
   }
@@ -91,6 +91,7 @@
 
   p {
     color: #4091dd;
-    font-size: 1.1rem;
-    margin: 0.6rem 0;
+    font-size: 1.3rem;
+    margin: 0rem 0;
+    text-align: center;
   }
