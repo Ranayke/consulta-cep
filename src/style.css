@@ -4,7 +4,6 @@
 
   #centerPage {
     font-family: Avenir, Helvetica, Arial, sans-serif;
-    color: #dadce7;
     height: 90vh;
     display: grid;
     grid-template-columns: 600px;
@@ -15,19 +14,24 @@
 
   .cepForms {
     display: flex;
-    background: #fff;
-    border-radius: 0.4rem;
-    margin: 1rem 0;
-    padding: 1.5rem 1rem;
-    box-shadow: 2px 8px 11px rgba(0, 0, 0, 0.3);
   }
 
   .cepDiscover {
     width: 50%;
+    background: #fff;
+    border-radius: 0.4rem;
+    margin: 1rem 1rem 1rem 0;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    box-shadow: 2px 8px 11px rgba(0, 0, 0, 0.3);
   }
 
   #app {
     width: 50%;
+    background: #fff;
+    border-radius: 0.4rem;
+    margin: 1rem 0;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    box-shadow: 2px 8px 11px rgba(0, 0, 0, 0.3);
   }
 
   form {
@@ -42,7 +46,6 @@
     border: none;
     font-size: 1.2rem;
     font-weight: 100;
-    color: #000;
     width: 15rem;
     outline: none;
     text-align: center;
