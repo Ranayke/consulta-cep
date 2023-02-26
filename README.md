@@ -8,7 +8,7 @@ Na primeira coluna, inserindo o UF, a Cidade e a Rua que se deseja descobrir o C
 Logo, na segunda coluna, digitando o CEP que se deseja confirmar a localidade, é autocompletado os dados de Rua, Bairro, Cidade e Estado relativo ao CEP, e o mapa faz um efeito "Zoom-in" para facilitar o reconhecimento do local.
 Foi utilizada API dos correios para pesquisa e um embed do google maps para localização, sendo as duas ferramentas gratuitas.
 <p>
-  <img width="700px" src="./src/assets/landingpage.png" />
+  <img width="700px" src="https://github.com/Ranayke/consulta-cep/blob/dd95f4bb22532a1ccc1e2eb2b79bedca18694ad8/src/assets/landingpage.PNG" />
 </p>
 
 </br>
